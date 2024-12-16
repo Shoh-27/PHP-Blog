@@ -1,0 +1,223 @@
+/* Bosh sahifa uchun umumiy dizayn */
+body {
+    font-family: Arial, sans-serif;
+    background-color:white; /* Qora fon */
+    color: #ffffff; /* Oq matn */
+    margin: 0;
+    padding: 30px;
+    margin-right: 40px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #f39c12; /* Sariq rangdagi sarlavhalar */
+    text-transform: uppercase;
+}
+
+h3 {
+    color: #3498db; /* Moviy rangdagi maqola sarlavhasi */
+}
+
+/* Maqolalar uchun ajratish */
+div {
+    background-color: white; /* Maqolalar fonini biroz qoraytirish */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease; /* Animatsiya qo'shish */
+}
+
+div:hover {
+    transform: scale(1.05); /* Maqolani hover qilganda kattalashish animatsiyasi */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7); /* Hoverda soya o'zgarishi */
+    animation: bounce 0.5s ease-in-out; /* Yangi animatsiya qo'shildi */
+}
+
+/* Yangi animatsiya: bounce */
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Matnlar va linklar uchun uslub */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #bdc3c7; /* Oq rangdagi matn */
+}
+
+small {
+    font-size: 12px;
+    color: #7f8c8d; /* Oq rangdagi kichik matn */
+}
+
+a {
+    color: #1abc9c; /* Yashil rangdagi link */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Link hoverda chizish */
+}
+
+/* Formalar uchun uslublar */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+form button {
+    background-color: #3498db;
+    border: none;
+    color: #fff;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2980b9; /* Tugmangizni hoverda rangini o'zgartirish */
+}
+
+/* Maqola sahifasi tugmalari */
+button[type="submit"] {
+    background-color: #e74c3c; /* O'chirish tugmasi uchun qizil rang */
+}
+
+button[type="submit"]:hover {
+    background-color: #c0392b; /* O'chirish tugmasi hoverda qorayadi */
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[name="reaction"][value="like"] {
+    background-color: green;
+    color: white;
+}
+
+button[name="reaction"][value="dislike"] {
+    background-color: red;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+/* Kichik ekranlar uchun */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    div {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    form input, form textarea {
+        width: 100%;
+        padding: 8px;
+    }
+
+    form button {
+        width: 100%;
+    }
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group input[type="file"] {
+    padding: 5px;
+}
+
+.profile-img {
+    margin-top: 10px;
+    max-width: 150px;
+    border-radius: 8px;
+}
+
+.submit-btn {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
